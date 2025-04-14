@@ -8,7 +8,7 @@
 #ifndef INC_LCD_DRIVER_H_
 #define INC_LCD_DRIVER_H_
 
-#include "../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+#include "stm32f4xx_hal.h"
 #include "ili9341.h"
 #include "fonts.h"
 #include "stmpe811.h"
