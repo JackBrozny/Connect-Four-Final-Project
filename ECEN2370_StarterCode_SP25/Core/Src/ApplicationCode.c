@@ -26,16 +26,17 @@ void ApplicationInit(void)
     #if COMPILE_TOUCH_FUNCTIONS == 1
 	InitializeLCDTouch();
 
-	// This is the orientation for the board to be direclty up where the buttons are vertically above the screen
+	// This is the orientation for the board to be direclty up where the buttons are to the right of the screen
 	// Top left would be low x value, high y value. Bottom right would be low x value, low y value.
-	StaticTouchData.orientation = STMPE811_Orientation_Portrait_2;
+	StaticTouchData.orientation = STMPE811_Orientation_Landscape_1;
 
 	#endif // COMPILE_TOUCH_FUNCTIONS
 }
 
 void LCD_Visual_Demo(void)
 {
-	visualDemo();
+	startupScreen();
+	// visualDemo();
 }
 
 #if COMPILE_TOUCH_FUNCTIONS == 1

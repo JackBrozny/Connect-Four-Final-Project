@@ -1,0 +1,27 @@
+#include "Game_Driver.h"
+
+void startupScreen(){
+	LCD_Clear(0, LCD_COLOR_BLACK);
+    HAL_Delay(1500);
+    
+    //Flashy intro
+    LCD_Draw_Expanding_Circle(100, 100, LCD_COLOR_BLUE);
+    LCD_Draw_Expanding_Circle(200, 150, LCD_COLOR_YELLOW);    
+    LCD_Draw_Expanding_Circle(130, 250, LCD_COLOR_GREEN);
+    LCD_Draw_Expanding_Circle(LCD_X_CENTER, LCD_Y_CENTER, LCD_COLOR_WHITE);
+    HAL_Delay(1000);
+
+    //Display game options
+//    LCD_DisplayChar(100,140,'c');
+//	LCD_DisplayChar(115,140,'o');
+//	LCD_DisplayChar(125,140,'n');
+//	LCD_DisplayChar(130,140,'n');
+//	LCD_DisplayChar(140,140,'e');
+//    LCD_DisplayChar(140,140,'c');
+//	LCD_DisplayChar(140,140,'t');
+//
+//	LCD_DisplayChar(100,160,'f');
+//	LCD_DisplayChar(115,160,'o');
+//	LCD_DisplayChar(125,160,'u');
+//	LCD_DisplayChar(130,160,'r');
+}

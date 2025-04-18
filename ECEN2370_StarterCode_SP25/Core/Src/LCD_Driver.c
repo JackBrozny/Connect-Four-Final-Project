@@ -222,9 +222,22 @@ void LCD_Draw_Circle_Fill(uint16_t Xpos, uint16_t Ypos, uint16_t radius, uint16_
         {
             if(x*x+y*y <= radius*radius)
             {
-            	LCD_Draw_Pixel(x+Xpos, y+Ypos, color);
+				// Ensures that pixels are within screen bounds
+				if ((x + (int16_t)Xpos <= LCD_PIXEL_WIDTH) && (x + (int16_t)Xpos >= 0) && (y + (int16_t)Ypos <= LCD_PIXEL_HEIGHT) && (y + (int16_t)Ypos >= 0))
+				{
+					LCD_Draw_Pixel(x+Xpos, y+Ypos, color);
+				}
             }
         }
+    }
+}
+
+void LCD_Draw_Expanding_Circle(uint16_t Xpos, uint16_t Ypos, uint16_t color){
+
+	// Expanding circle to fill screen
+    for (int16_t radius = 10; radius < 300; radius *= 1.1){
+        LCD_Draw_Circle_Fill(Xpos, Ypos, radius, color);
+        HAL_Delay(20);
     }
 }
 
@@ -234,6 +247,14 @@ void LCD_Draw_Vertical_Line(uint16_t x, uint16_t y, uint16_t len, uint16_t color
   {
 	  LCD_Draw_Pixel(x, i+y, color);
   }
+}
+
+void LCD_Draw_Horizontal_Line(uint16_t x, uint16_t y, uint16_t len, uint16_t color)
+{
+	for (uint16_t i = 0; i < len; i++)
+	{
+		LCD_Draw_Pixel(i+x, y, color);
+	}
 }
 
 void LCD_Clear(uint8_t LayerIndex, uint16_t Color)
@@ -284,6 +305,11 @@ void LCD_DisplayChar(uint16_t Xpos, uint16_t Ypos, uint8_t Ascii)
   Ascii -= 32;
   LCD_Draw_Char(Xpos, Ypos, &LCD_Currentfonts->table[Ascii * LCD_Currentfonts->Height]);
 }
+
+void LCD_StartScreen(){
+
+}
+
 
 void visualDemo(void)
 {
