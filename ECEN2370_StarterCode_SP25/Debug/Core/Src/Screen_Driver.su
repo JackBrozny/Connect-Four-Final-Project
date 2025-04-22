@@ -1,0 +1,2 @@
+../Core/Src/Screen_Driver.c:4:6:openStartupScreen	16	static
+../Core/Src/Screen_Driver.c:76:6:openPlayScreen	16	static

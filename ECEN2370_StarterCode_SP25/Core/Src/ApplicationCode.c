@@ -35,7 +35,7 @@ void ApplicationInit(void)
 
 void LCD_Visual_Demo(void)
 {
-	startupScreen();
+	openStartupScreen();
 	// visualDemo();
 }
 
