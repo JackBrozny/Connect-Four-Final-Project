@@ -28,15 +28,19 @@ void ApplicationInit(void)
 
 	// This is the orientation for the board to be direclty up where the buttons are to the right of the screen
 	// Top left would be low x value, high y value. Bottom right would be low x value, low y value.
-	StaticTouchData.orientation = STMPE811_Orientation_Landscape_1;
+	StaticTouchData.orientation = STMPE811_Orientation_Portrait_2;
 
 	#endif // COMPILE_TOUCH_FUNCTIONS
 }
 
-void LCD_Visual_Demo(void)
+void LCD_StartUp(void)
 {
-	openStartupScreen();
+	Screen_OpenStartupScreen();
 	// visualDemo();
+}
+
+void startGamePolling(){
+	Board_PlayPolling();
 }
 
 #if COMPILE_TOUCH_FUNCTIONS == 1
@@ -58,3 +62,11 @@ void LCD_Touch_Polling_Demo(void)
 }
 #endif // COMPILE_TOUCH_FUNCTIONS
 
+void EXTI0_IRQHandler(){
+	HAL_NVIC_DisableIRQ(EXTI0_IRQn);
+	Board_DropPiece();
+	EXTI_HandleTypeDef hexti;
+	hexti.Line = EXTI_LINE_0;
+	HAL_EXTI_ClearPending(&hexti, EXTI_TRIGGER_FALLING);
+	HAL_NVIC_EnableIRQ(EXTI0_IRQn);
+}

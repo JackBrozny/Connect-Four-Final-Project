@@ -107,8 +107,8 @@ int main(void)
   MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
   ApplicationInit(); // Initializes the LCD functionality
-  LCD_Visual_Demo();
-  HAL_Delay(5000);
+  LCD_StartUp();
+  startGamePolling(); // Enters infinite loop here
   /* USER CODE END 2 */
 // #if COMPILE_TOUCH_FUNCTIONS == 1 // This block will need to be deleted
 //   LCD_Touch_Polling_Demo(); // This function Will not return
@@ -473,6 +473,14 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_EVT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  //Additional EXTI Init for button interrupt
+  EXTI->IMR &= ~(1<<0);
+  EXTI->IMR |= (1<<0);
+
+  EXTI->RTSR &= ~(1<<0);
+  EXTI->RTSR |= (1<<0);
+  HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 
   /*Configure GPIO pin : ACP_RST_Pin */
   GPIO_InitStruct.Pin = ACP_RST_Pin;

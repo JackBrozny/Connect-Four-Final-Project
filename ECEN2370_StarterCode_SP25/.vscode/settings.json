@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "lcd_driver.h": "c"
+        "lcd_driver.h": "c",
+        "applicationcode.h": "c",
+        "board_driver.h": "c",
+        "screen_driver.h": "c",
+        "stdio.h": "c",
+        "stm32f4xx_hal.h": "c"
     }
 }
