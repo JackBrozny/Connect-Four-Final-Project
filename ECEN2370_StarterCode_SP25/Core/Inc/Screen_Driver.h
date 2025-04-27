@@ -34,6 +34,8 @@ extern STMPE811_TouchData touchdata;
 
 void Screen_OpenStartupScreen();
 void Screen_OpenPlayScreen(bool isOnePlayer);
+void Screen_OpenWinStats(bool isPlayerBlue);
+void Screen_OpenTieScreen();
 void Screen_DisplayHoveringPiece(bool isPlayerBlue);
 void Screen_MoveHoveringPieceRight(bool isPlayerBlue);
 void Screen_MoveHoveringPieceLeft(bool isPlayerBlue);

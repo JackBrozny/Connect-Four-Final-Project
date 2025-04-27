@@ -2,5 +2,5 @@
 ../Core/Src/Board_Driver.c:25:6:Board_ShiftHoveringPieceRight	8	static
 ../Core/Src/Board_Driver.c:33:6:Board_ShiftHoveringPieceLeft	8	static
 ../Core/Src/Board_Driver.c:41:6:Board_DropPiece	24	static
-../Core/Src/Board_Driver.c:68:6:Board_CheckForWin	4	static
-../Core/Src/Board_Driver.c:72:6:Board_PlayPolling	8	static
+../Core/Src/Board_Driver.c:79:6:Board_CheckForWin	24	static
+../Core/Src/Board_Driver.c:252:6:Board_PlayPolling	8	static

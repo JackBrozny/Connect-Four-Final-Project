@@ -60,8 +60,6 @@ void Screen_OpenStartupScreen(){
     while (1){ //Used polling demo logic
         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
 			/* Touch valid */
-            LCD_Clear(0, LCD_COLOR_WHITE);
-
 			printf("\nX: %03d\nY: %03d\n", touchdata.x, touchdata.y);
             if (TM_STMPE811_TouchInRectangle(&touchdata, LCD_PIXEL_WIDTH / 4 - 40, LCD_PIXEL_HEIGHT * 2 / 3 - 40, 40 * 2, 40 * 2)){
                 LCD_Clear(0, LCD_COLOR_RED); // Placeholder for second screen
@@ -93,9 +91,44 @@ void Screen_OpenPlayScreen(bool isOnePlayer){
         }
         Ypos += SLOT_SPACE;
     }
+
+}
+
+void Screen_OpenWinStats(bool isPlayerBlue){
+    LCD_SetFont(&Font16x24);
+
+    if (isPlayerBlue){
+        LCD_DisplayChar(55,20,'B');
+        LCD_DisplayChar(70,20,'l');
+        LCD_DisplayChar(85,20,'u');
+        LCD_DisplayChar(100,20,'e');
+
+        LCD_DisplayChar(120,20,'W');
+        LCD_DisplayChar(135,20,'i');
+        LCD_DisplayChar(150,20,'n');
+        LCD_DisplayChar(165,20,'s');
+        LCD_DisplayChar(180,20,'!');
+    }
+    else{
+        LCD_DisplayChar(55,20,'R');
+        LCD_DisplayChar(70,20,'e');
+        LCD_DisplayChar(85,20,'d');
+
+        LCD_DisplayChar(105,20,'W');
+        LCD_DisplayChar(120,20,'i');
+        LCD_DisplayChar(135,20,'n');
+        LCD_DisplayChar(150,20,'s');
+        LCD_DisplayChar(165,20,'!');
+    }
+}
+
+void Screen_OpenTieScreen(){
+    
 }
 
 void Screen_DisplayHoveringPiece(bool isPlayerBlue){
+    LCD_Draw_Circle_Fill(hoveringPieceXpos, hoveringPieceYpos, 12, LCD_COLOR_WHITE);    
+
     hoveringPieceXpos = SCREEN_COLUMN_4;
     hoveringPieceYpos = SCREEN_ROW_1 - SLOT_SPACE;
 

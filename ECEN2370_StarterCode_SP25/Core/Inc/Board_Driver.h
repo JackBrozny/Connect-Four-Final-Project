@@ -36,8 +36,12 @@ typedef enum{
 
 
 void Board_SetHoveringPiece();
+void Board_ShiftHoveringPieceRight();
+void Board_ShiftHoveringPieceLeft();
 void Board_DropPiece();
-void Board_CheckForWin();
+bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol);
+bool Board_CheckForTie();
+Board_WinCondition();
 void Board_PlayPolling();
 
 #endif /* INC_GAME_DRIVER_H_ */

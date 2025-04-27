@@ -9,7 +9,7 @@
 
 #include "Board_Driver.h"
 
-static bool isStillPlaying = true;
+
 static uint8_t hoveringPiecePos;
 
 GamePiece_t Board[ROWS][COLUMNS];
@@ -65,14 +65,14 @@ void Board_DropPiece(){
                 break;
             }
         }
-        Board_WinCondition();
-
+        isPlayerBlue = !isPlayerBlue;
+        Board_CheckForWin(placedRow, hoveringPiecePos);
     }
     
     Board_SetHoveringPiece();
 }
 
-bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force checks for win in all 4 directions
+void Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force algorithm checks for all 16 possible win situations
     uint8_t matchCount = 1; // Number of pieces in a row
 
     GamePiece_t placedPieceColor;
@@ -84,12 +84,12 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     }
     GamePiece_t comparePieceColor = EMPTY; //Set to empty to fix compiler warnings
     
-    int8_t rowIter, colIter; // Use signed ints to evaluate if a number is sometimes < 0
+    uint8_t rowIter, colIter;
 
     ///////////////////////////////CHECK HORIZONTAL 4-IN-A-ROWS
     rowIter = placedRow;
     colIter = placedCol - 1;
-    while (colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (colIter != BOARD_COLUMN_1){ //Iterates columns to the left
         comparePieceColor = Board[rowIter][colIter];
         if (placedPieceColor == comparePieceColor){
             matchCount++;
@@ -99,14 +99,14 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
             if (matchCount == 4)
             {
                 //WIN
-                isStillPlaying = false;             
-                return true;
+                LCD_Clear(0, LCD_COLOR_YELLOW);
+                return;
             }
             break;
         }
     }
-    colIter = placedCol + 1;
-    while (colIter <= BOARD_COLUMN_7){ // Iterates columns to the right
+    colIter = placedCol;
+    while (colIter != BOARD_COLUMN_7){ // Iterates columns to the right
         comparePieceColor = Board[rowIter][colIter];
         if(placedPieceColor == comparePieceColor){
             matchCount++;
@@ -118,9 +118,9 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     }
 
     if (matchCount == 4){
-        // WIN  
-        isStillPlaying = false;             
-        return true;
+        // WIN
+        LCD_Clear(0, LCD_COLOR_YELLOW);
+        return;
     }
     matchCount = 1;
 
@@ -128,26 +128,27 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     
 
     ////////////////////////////CHECK VERTICAL 4-IN-A-ROWS
-    rowIter = placedRow - 1;
+    rowIter = placedRow;
+    colIter = placedCol - 1;
+    while (rowIter != BOARD_ROW_1){ //Iterates columns to the left
+        comparePieceColor = Board[rowIter][colIter];
+        if (placedPieceColor == comparePieceColor){
+            matchCount++;
+            rowIter--;
+        }
+        else{
+            if (matchCount == 4)
+            {
+                //WIN
+                LCD_Clear(0, LCD_COLOR_YELLOW);
+
+                return;
+            }
+            break;
+        }
+    }
     colIter = placedCol;
-    while (rowIter >= BOARD_ROW_1){ //Iterates columns to the left
-        comparePieceColor = Board[rowIter][colIter];
-        if (placedPieceColor == comparePieceColor){
-            matchCount++;
-            rowIter--;
-        }
-        else{
-            if (matchCount == 4)
-            {
-                //WIN
-                isStillPlaying = false;             
-                return true;
-            }
-            break;
-        }
-    }
-    rowIter = placedRow + 1;
-    while (rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (colIter != BOARD_ROW_6){ // Iterates columns to the right
         comparePieceColor = Board[rowIter][colIter];
         if(placedPieceColor == comparePieceColor){
             matchCount++;
@@ -160,116 +161,19 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
 
     if (matchCount == 4){
         // WIN
-        isStillPlaying = false;             
-        return true;
+        LCD_Clear(0, LCD_COLOR_YELLOW);
+        return;
     }
     matchCount = 1;
 
 
-    ////////////////////////////CHECK DIAGONAL TOP LEFT TO BOTTOM RIGHT 4-IN-A-ROWS
-    rowIter = placedRow - 1;
-    colIter = placedCol - 1;
-    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
-        comparePieceColor = Board[rowIter][colIter];
-        if (placedPieceColor == comparePieceColor){
-            matchCount++;
-            rowIter--;
-            colIter--;
-        }
-        else{
-            if (matchCount == 4)
-            {
-                //WIN
-                isStillPlaying = false;             
-                return true;
-            }
-            break;
-        }
-    }
-    rowIter = placedRow + 1;
-    colIter = placedCol + 1;
-    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right
-        comparePieceColor = Board[rowIter][colIter];
-        if(placedPieceColor == comparePieceColor){
-            matchCount++;
-            rowIter++;
-            colIter++;
-        }
-        else{
-            break;
-        }
-    }
-
-    if (matchCount == 4){
-        // WIN       
-        isStillPlaying = false;             
-        return true;
-    }
-    matchCount = 1;
-
-
-    ////////////////////////////CHECK DIAGONAL TOP RIGHT TO BOTTOM LEFT 4-IN-A-ROWS
-    rowIter = placedRow + 1;
-    colIter = placedCol - 1;
-    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
-        comparePieceColor = Board[rowIter][colIter];
-        if (placedPieceColor == comparePieceColor){
-            matchCount++;
-            rowIter++;
-            colIter--;
-        }
-        else{
-            if (matchCount == 4)
-            {
-                //WIN
-                isStillPlaying = false;             
-                return true;
-            }
-            break;
-        }
-    }
-    rowIter = placedRow - 1;
-    colIter = placedCol + 1;
-    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right
-        comparePieceColor = Board[rowIter][colIter];
-        if(placedPieceColor == comparePieceColor){
-            matchCount++;
-            rowIter--;
-            colIter++;
-        }
-        else{
-            break;
-        }
-    }
-
-    if (matchCount == 4){
-        // WIN
-        isStillPlaying = false;             
-        return true;
-    }
-
-    return false;
-}
-
-bool Board_CheckForTie(){
-    for (uint8_t colIter = BOARD_COLUMN_1; colIter <= BOARD_COLUMN_7; colIter++){
-        if (Board[BOARD_ROW_1][colIter] == EMPTY){
-            return false;
-        }
-    }
-    
-    isStillPlaying = false;
-    return true;
-}
-
-Board_WinCondition(){
 
 }
 
 void Board_PlayPolling(){
     isPlayerBlue = true;
     Board_SetHoveringPiece();
-    while (isStillPlaying){ //Used polling demo logic
+    while (1){ //Used polling demo logic
         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
 			/* Touch valid */
 
