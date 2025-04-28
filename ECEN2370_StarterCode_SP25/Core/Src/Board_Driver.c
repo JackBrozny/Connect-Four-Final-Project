@@ -9,13 +9,33 @@
 
 #include "Board_Driver.h"
 
-static bool isStillPlaying = true;
 static uint8_t hoveringPiecePos;
+static uint8_t placedPieceRow; // Used to check for win condition
+
 
 GamePiece_t Board[ROWS][COLUMNS];
 GamePiece_t columnSelection[COLUMNS];
 static bool isPlayerBlue;
+static bool isStillPlaying;
 
+void Board_Reset(){
+    isPlayerBlue = true;
+    isStillPlaying = true;
+    
+    for (uint8_t row = BOARD_ROW_1; row <= BOARD_ROW_6; row++){
+        for (uint8_t col = BOARD_COLUMN_1; col <= BOARD_COLUMN_7; col++){
+            Board[row][col] = EMPTY;
+        }
+    }
+}
+
+bool Board_GetisStillPlaying(){
+    return isStillPlaying;
+}
+
+bool Board_GetisPlayerBlue(){
+    return isPlayerBlue;
+}
 
 void Board_SetHoveringPiece(){
     hoveringPiecePos = BOARD_COLUMN_4; // Center of board
@@ -40,7 +60,6 @@ void Board_ShiftHoveringPieceLeft(){
 
 void Board_DropPiece(){
     if (Board[BOARD_ROW_1][hoveringPiecePos] == EMPTY){
-        uint8_t placedRow; // Used to check for win condition
         for (uint8_t row = BOARD_ROW_1; row <= BOARD_ROW_6; row++){ //Iterate down through rows
             if (Board[row][hoveringPiecePos] != EMPTY){ //If the current iterated slot is full, fill the one on top
                 if (isPlayerBlue){
@@ -49,7 +68,7 @@ void Board_DropPiece(){
                 else{
                     Board[row-1][hoveringPiecePos] = RED;
                 }
-                placedRow = row-1;
+                placedPieceRow = row-1;
                 Screen_DrawPiece(Screen_ColumnToCoords(hoveringPiecePos), Screen_RowToCoords(row-1), isPlayerBlue);
                 break;
             }
@@ -60,13 +79,14 @@ void Board_DropPiece(){
                 else{
                     Board[row][hoveringPiecePos] = RED;
                 }
-                placedRow = row;
+                placedPieceRow = row;
                 Screen_DrawPiece(Screen_ColumnToCoords(hoveringPiecePos), Screen_RowToCoords(row), isPlayerBlue);
                 break;
             }
         }
-        Board_WinCondition();
-
+        if (Board_CheckEndCondition())
+            return;
+        isPlayerBlue = !isPlayerBlue;
     }
     
     Board_SetHoveringPiece();
@@ -262,9 +282,22 @@ bool Board_CheckForTie(){
     return true;
 }
 
-Board_WinCondition(){
+/*
+0 -> No end condition
+1 -> Win
+2 -> Tie
+*/
+uint8_t Board_CheckEndCondition(){
+    if (Board_CheckForWin(placedPieceRow, hoveringPiecePos)){
+        return 1; 
+    }
+    if (Board_CheckForTie()){
+        return 2;
+    }
 
+    return 0;
 }
+
 
 void Board_PlayPolling(){
     isPlayerBlue = true;

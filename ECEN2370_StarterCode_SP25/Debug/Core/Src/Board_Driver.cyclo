@@ -1,6 +1,11 @@
-../Core/Src/Board_Driver.c:20:6:Board_SetHoveringPiece	1
-../Core/Src/Board_Driver.c:25:6:Board_ShiftHoveringPieceRight	2
-../Core/Src/Board_Driver.c:33:6:Board_ShiftHoveringPieceLeft	2
-../Core/Src/Board_Driver.c:41:6:Board_DropPiece	8
-../Core/Src/Board_Driver.c:79:6:Board_CheckForWin	30
-../Core/Src/Board_Driver.c:252:6:Board_PlayPolling	4
+../Core/Src/Board_Driver.c:21:6:Board_Reset	3
+../Core/Src/Board_Driver.c:32:6:Board_GetisStillPlaying	1
+../Core/Src/Board_Driver.c:36:6:Board_GetisPlayerBlue	1
+../Core/Src/Board_Driver.c:40:6:Board_SetHoveringPiece	1
+../Core/Src/Board_Driver.c:45:6:Board_ShiftHoveringPieceRight	2
+../Core/Src/Board_Driver.c:53:6:Board_ShiftHoveringPieceLeft	2
+../Core/Src/Board_Driver.c:61:6:Board_DropPiece	8
+../Core/Src/Board_Driver.c:95:6:Board_CheckForWin	30
+../Core/Src/Board_Driver.c:274:6:Board_CheckForTie	3
+../Core/Src/Board_Driver.c:290:9:Board_CheckEndCondition	3
+../Core/Src/Board_Driver.c:302:6:Board_PlayPolling	5

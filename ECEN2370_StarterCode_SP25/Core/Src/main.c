@@ -107,8 +107,7 @@ int main(void)
   MX_I2C3_Init();
   /* USER CODE BEGIN 2 */
   ApplicationInit(); // Initializes the LCD functionality
-  LCD_StartUp();
-  startGamePolling(); // Enters infinite loop here
+  
   /* USER CODE END 2 */
 // #if COMPILE_TOUCH_FUNCTIONS == 1 // This block will need to be deleted
 //   LCD_Touch_Polling_Demo(); // This function Will not return
@@ -118,7 +117,18 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+    resetBoard();
+    __HAL_TIM_SET_COUNTER(&htim2, 0); //reset timer
 
+    LCD_StartUp();
+    HAL_TIM_Base_Start(&htim2);
+
+    startGamePolling(); // Enters infinite loop here
+
+    uint32_t time = __HAL_TIM_GET_COUNTER(&htim2);
+    HAL_TIM_Base_Stop(&htim2);
+    printf("Time recorded: %lu seconds\n", time);
+    displayEndScreen(time);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -382,7 +392,7 @@ static void MX_TIM2_Init(void)
 
   /* USER CODE END TIM2_Init 1 */
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 0;
+  htim2.Init.Prescaler = 83999999; // Timer counts up at 1Hz so we can take the CNT value directly
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim2.Init.Period = 4294967295;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV4; //Defaults to 16Mhz which only counts for about 4.5 minutes. Increasing clock division to 4 gives us roughly 18 minutes.

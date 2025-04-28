@@ -33,8 +33,13 @@ void ApplicationInit(void)
 	#endif // COMPILE_TOUCH_FUNCTIONS
 }
 
+void resetBoard(){
+	Board_Reset();
+}
+
 void LCD_StartUp(void)
 {
+
 	Screen_OpenStartupScreen();
 	// visualDemo();
 }
@@ -42,6 +47,13 @@ void LCD_StartUp(void)
 void startGamePolling(){
 	Board_PlayPolling();
 }
+
+void displayEndScreen(uint32_t time){
+	uint8_t result = Board_CheckEndCondition(time);
+
+	Screen_OpenEndScreen(Board_GetisPlayerBlue(), result, time);
+}
+
 
 #if COMPILE_TOUCH_FUNCTIONS == 1
 void LCD_Touch_Polling_Demo(void)
@@ -64,7 +76,8 @@ void LCD_Touch_Polling_Demo(void)
 
 void EXTI0_IRQHandler(){
 	HAL_NVIC_DisableIRQ(EXTI0_IRQn);
-	Board_DropPiece();
+	if (Board_GetisStillPlaying())
+		Board_DropPiece();
 	EXTI_HandleTypeDef hexti;
 	hexti.Line = EXTI_LINE_0;
 	HAL_EXTI_ClearPending(&hexti, EXTI_TRIGGER_FALLING);

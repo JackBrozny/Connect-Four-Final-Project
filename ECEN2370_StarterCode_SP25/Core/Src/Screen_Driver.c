@@ -5,6 +5,9 @@ static uint16_t hoveringPieceXpos;
 static uint16_t hoveringPieceYpos;
 STMPE811_TouchData touchdata;
 
+static uint8_t redWins;
+static uint8_t blueWins;
+
 void Screen_OpenStartupScreen(){
 	LCD_Clear(0, LCD_COLOR_WHITE);
     HAL_Delay(200);
@@ -78,6 +81,8 @@ void Screen_OpenStartupScreen(){
 }
 
 void Screen_OpenPlayScreen(bool isOnePlayer){
+
+
     LCD_Clear(0, LCD_COLOR_WHITE);
     HAL_Delay(500);
 
@@ -91,13 +96,14 @@ void Screen_OpenPlayScreen(bool isOnePlayer){
         }
         Ypos += SLOT_SPACE;
     }
-
 }
 
-void Screen_OpenWinStats(bool isPlayerBlue){
+void Screen_OpenEndScreen(bool isPlayerBlue, uint8_t result, uint32_t time){
     LCD_SetFont(&Font16x24);
 
     if (isPlayerBlue){
+        if (result == 1)
+            blueWins++;
         LCD_DisplayChar(55,20,'B');
         LCD_DisplayChar(70,20,'l');
         LCD_DisplayChar(85,20,'u');
@@ -110,6 +116,8 @@ void Screen_OpenWinStats(bool isPlayerBlue){
         LCD_DisplayChar(180,20,'!');
     }
     else{
+        if (result == 1)
+            redWins++;
         LCD_DisplayChar(55,20,'R');
         LCD_DisplayChar(70,20,'e');
         LCD_DisplayChar(85,20,'d');
@@ -120,10 +128,69 @@ void Screen_OpenWinStats(bool isPlayerBlue){
         LCD_DisplayChar(150,20,'s');
         LCD_DisplayChar(165,20,'!');
     }
+    HAL_Delay(3000);
+    LCD_Clear(0, LCD_COLOR_WHITE);
+
+    LCD_DisplayChar(10,20,'B');
+    LCD_DisplayChar(25,20,'l');
+    LCD_DisplayChar(40,20,'u');
+    LCD_DisplayChar(55,20,'e');
+    LCD_DisplayChar(70,20,':');
+    LCD_DisplayChar(95,20,blueWins+'0');
+
+    LCD_DisplayChar(10,50,'R');
+    LCD_DisplayChar(25,50,'e');
+    LCD_DisplayChar(40,50,'d');
+    LCD_DisplayChar(55,50,':');
+    LCD_DisplayChar(95,50,redWins+'0');
+
+    LCD_DisplayChar(10,80,'T');
+    LCD_DisplayChar(25,80,'i');
+    LCD_DisplayChar(40,80,'m');
+    LCD_DisplayChar(55,80,'e');
+    LCD_DisplayChar(70,80,':');
+
+    uint32_t hundredsDigit = time / 100;
+    time %= 100;
+    uint32_t tensDigit = time / 10;
+    time %= 10;
+    uint32_t onesDigit = time;
+
+    LCD_DisplayChar(95,80,hundredsDigit+'0');
+    LCD_DisplayChar(110,80,tensDigit+'0');
+    LCD_DisplayChar(125,80,onesDigit+'0');
+
+    Screen_DisplayPlayAgainButton();
 }
 
-void Screen_OpenTieScreen(){
-    
+
+void Screen_DisplayPlayAgainButton(){
+    // Erase board and display a button that says "Play again?"
+    LCD_Draw_Circle_Fill(LCD_PIXEL_WIDTH/2, LCD_PIXEL_HEIGHT*2/3, 50, LCD_COLOR_GREEN);
+    LCD_SetFont(&Font12x12);
+    LCD_DisplayChar(80,210,'P');
+    LCD_DisplayChar(90,210,'l');
+    LCD_DisplayChar(96,210,'a');
+    LCD_DisplayChar(106,210,'y');
+
+    LCD_DisplayChar(120,210,'A');
+    LCD_DisplayChar(130,210,'g');
+    LCD_DisplayChar(138,210,'a');
+    LCD_DisplayChar(146,210,'i');
+    LCD_DisplayChar(149,210,'n');
+    LCD_DisplayChar(158,210,'?');
+
+
+
+    while (1){ //Used polling demo logic
+        if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+			/* Touch valid */
+			printf("\nX: %03d\nY: %03d\n", touchdata.x, touchdata.y);
+            if (TM_STMPE811_TouchInRectangle(&touchdata, LCD_PIXEL_WIDTH / 2 - 50, LCD_PIXEL_HEIGHT * 2 / 3 - 50, 50 * 2, 50 * 2)){
+                break;
+            }
+        }
+    }
 }
 
 void Screen_DisplayHoveringPiece(bool isPlayerBlue){

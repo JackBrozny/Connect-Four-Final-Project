@@ -34,14 +34,18 @@ typedef enum{
 #define BOARD_ROW_5 4
 #define BOARD_ROW_6 5
 
-
+void Board_Reset();
+bool Board_GetisStillPlaying();
+bool Board_GetisPlayerBlue();
+uint8_t Board_GetredWins();
+uint8_t Board_GetblueWins();
 void Board_SetHoveringPiece();
 void Board_ShiftHoveringPieceRight();
 void Board_ShiftHoveringPieceLeft();
 void Board_DropPiece();
 bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol);
 bool Board_CheckForTie();
-Board_WinCondition();
+uint8_t Board_CheckEndCondition();
 void Board_PlayPolling();
 
 #endif /* INC_GAME_DRIVER_H_ */

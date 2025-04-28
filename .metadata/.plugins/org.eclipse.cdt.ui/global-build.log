@@ -1,11 +1,4 @@
-16:52:10 **** Clean-only build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 clean 
-rm -rf ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.su
-rm -rf ./Core/Startup/startup_stm32f429zitx.d ./Core/Startup/startup_stm32f429zitx.o
-rm -rf ./Core/Src/ApplicationCode.cyclo ./Core/Src/ApplicationCode.d ./Core/Src/ApplicationCode.o ./Core/Src/ApplicationCode.su ./Core/Src/Board_Driver.cyclo ./Core/Src/Board_Driver.d ./Core/Src/Board_Driver.o ./Core/Src/Board_Driver.su ./Core/Src/LCD_Driver.cyclo ./Core/Src/LCD_Driver.d ./Core/Src/LCD_Driver.o ./Core/Src/LCD_Driver.su ./Core/Src/Screen_Driver.cyclo ./Core/Src/Screen_Driver.d ./Core/Src/Screen_Driver.o ./Core/Src/Screen_Driver.su ./Core/Src/fonts.cyclo ./Core/Src/fonts.d ./Core/Src/fonts.o ./Core/Src/fonts.su ./Core/Src/ili9341.cyclo ./Core/Src/ili9341.d ./Core/Src/ili9341.o ./Core/Src/ili9341.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/stmpe811.cyclo ./Core/Src/stmpe811.d ./Core/Src/stmpe811.o ./Core/Src/stmpe811.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
-rm -rf ECEN2370_StarterCode_SP25.elf ECEN2370_StarterCode_SP25.list ECEN2370_StarterCode_SP25.map default.size.stdout
- 
-16:52:12 **** Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:31:08 **** Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
@@ -49,211 +42,41 @@ Finished building target: ECEN2370_StarterCode_SP25.elf
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
+  39012	    128	 156408	 195548	  2fbdc	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-16:52:18 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:31:15 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
+  39012	    128	 156408	 195548	  2fbdc	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
-16:54:55 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:32:53 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
 arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: ECEN2370_StarterCode_SP25.elf
  
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
+  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-16:55:06 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:32:57 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
+  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
-16:56:08 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:47:43 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-16:56:11 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:00:04 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:00:07 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  36968	    128	 156400	 193496	  2f3d8	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:04:09 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  36948	    128	 156400	 193476	  2f3c4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:04:12 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  36948	    128	 156400	 193476	  2f3c4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:04:46 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  36948	    128	 156400	 193476	  2f3c4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:04:50 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  36948	    128	 156400	 193476	  2f3c4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:11:44 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  37124	    128	 156400	 193652	  2f474	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:11:50 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37124	    128	 156400	 193652	  2f474	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:15:03 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  37300	    128	 156400	 193828	  2f524	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:15:06 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37300	    128	 156400	 193828	  2f524	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:21:06 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  37356	    128	 156400	 193884	  2f55c	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:21:10 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37356	    128	 156400	 193884	  2f55c	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:23:15 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  37364	    128	 156400	 193892	  2f564	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-17:23:19 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37364	    128	 156400	 193892	  2f564	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:33:00 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: ECEN2370_StarterCode_SP25.elf
@@ -261,78 +84,36 @@ Finished building target: ECEN2370_StarterCode_SP25.elf
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  37280	    128	 156400	 193808	  2f510	ECEN2370_StarterCode_SP25.elf
+  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-17:44:15 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:47:49 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+18:55:27 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: ECEN2370_StarterCode_SP25.elf
  
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  37476	    128	 156400	 194004	  2f5d4	ECEN2370_StarterCode_SP25.elf
+  39060	    128	 156408	 195596	  2fc0c	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-17:44:19 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:55:32 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  37476	    128	 156400	 194004	  2f5d4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:46:49 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37476	    128	 156400	 194004	  2f5d4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:47:16 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37476	    128	 156400	 194004	  2f5d4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:50:05 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37476	    128	 156400	 194004	  2f5d4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-17:58:11 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37476	    128	 156400	 194004	  2f5d4	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-18:03:59 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
-arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ECEN2370_StarterCode_SP25.elf
- 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
-   text	   data	    bss	    dec	    hex	filename
-  37488	    128	 156400	 194016	  2f5e0	ECEN2370_StarterCode_SP25.elf
-Finished building: default.size.stdout
- 
-Finished building: ECEN2370_StarterCode_SP25.list
- 
-18:04:02 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
-make -j16 all 
-arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
-   text	   data	    bss	    dec	    hex	filename
-  37488	    128	 156400	 194016	  2f5e0	ECEN2370_StarterCode_SP25.elf
+  39060	    128	 156408	 195596	  2fc0c	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  

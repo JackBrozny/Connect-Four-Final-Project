@@ -15,9 +15,10 @@
 #define INC_APPLICATIONCODE_H_
 
 void ApplicationInit(void);
+void resetBoard();
 void LCD_StartUp(void);
 void startGamePolling();
-void displayWinScreen();
+void displayEndScreen(uint32_t time);
 
 #if (COMPILE_TOUCH_FUNCTIONS == 1)
 void LCD_Touch_Polling_Demo(void);
