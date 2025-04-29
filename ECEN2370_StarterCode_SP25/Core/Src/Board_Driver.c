@@ -96,8 +96,12 @@ void Board_PlayAIMove(){ // If this was coded better this wouldn't be called in 
     if (Screen_GetisOnePlayer()){
         uint8_t col = AI_GenerateColumn();
 
+        while (Board[BOARD_ROW_1][col] != EMPTY)// Make sure spot isn't full
+            col = AI_GenerateColumn();
+        
+        HAL_Delay(300);
+
         if (col == hoveringPiecePos){
-            HAL_Delay(300);
         }
         else if (col > hoveringPiecePos){
             while (hoveringPiecePos != col){
@@ -328,6 +332,9 @@ void Board_PlayPolling(){
     isPlayerBlue = true;
     Board_SetHoveringPiece();
     while (isStillPlaying){ //Used polling demo logic
+        if (Screen_GetisOnePlayer() && !isPlayerBlue)
+            Board_PlayAIMove();
+
         if (returnTouchStateAndLocation(Screen_GetPTouchData()) == STMPE811_State_Pressed) {
 			/* Touch valid */
 

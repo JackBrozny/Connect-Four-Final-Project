@@ -86,11 +86,8 @@ void Error_Handler(void)
 
 void EXTI0_IRQHandler(){
 	HAL_NVIC_DisableIRQ(EXTI0_IRQn);
-	if (Board_GetisStillPlaying()){
+	if (Board_GetisStillPlaying())
 		Board_DropPiece();
-		if (Screen_GetisOnePlayer)
-			Board_PlayAIMove();
-	}	
 	EXTI_HandleTypeDef hexti;
 	hexti.Line = EXTI_LINE_0;
 	HAL_EXTI_ClearPending(&hexti, EXTI_TRIGGER_FALLING);

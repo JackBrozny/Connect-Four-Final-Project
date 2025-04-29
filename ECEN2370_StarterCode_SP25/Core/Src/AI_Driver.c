@@ -40,5 +40,5 @@ uint32_t AI_GenerateColumn(){
     uint32_t col;
 
     HAL_RNG_GenerateRandomNumber(&hrng, &col);
-    return col % 8; // Returns a number 0-7
+    return col % 7; // Returns a number 0-6
 }
