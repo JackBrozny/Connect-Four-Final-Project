@@ -9,6 +9,7 @@
 #define INC_BOARD_DRIVER_H_
 
 #include "Screen_Driver.h"
+#include "AI_Driver.h"
 typedef enum{
     EMPTY,
     RED,
@@ -43,6 +44,7 @@ void Board_SetHoveringPiece();
 void Board_ShiftHoveringPieceRight();
 void Board_ShiftHoveringPieceLeft();
 void Board_DropPiece();
+void Board_PlayAIMove();
 bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol);
 bool Board_CheckForTie();
 uint8_t Board_CheckEndCondition();

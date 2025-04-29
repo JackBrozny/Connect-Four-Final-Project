@@ -5,7 +5,8 @@
 ../Core/Src/Board_Driver.c:45:6:Board_ShiftHoveringPieceRight	8	static
 ../Core/Src/Board_Driver.c:53:6:Board_ShiftHoveringPieceLeft	8	static
 ../Core/Src/Board_Driver.c:61:6:Board_DropPiece	24	static
-../Core/Src/Board_Driver.c:95:6:Board_CheckForWin	24	static
-../Core/Src/Board_Driver.c:274:6:Board_CheckForTie	16	static
-../Core/Src/Board_Driver.c:290:9:Board_CheckEndCondition	8	static
-../Core/Src/Board_Driver.c:302:6:Board_PlayPolling	8	static
+../Core/Src/Board_Driver.c:95:6:Board_PlayAIMove	16	static
+../Core/Src/Board_Driver.c:120:6:Board_CheckForWin	24	static
+../Core/Src/Board_Driver.c:299:6:Board_CheckForTie	16	static
+../Core/Src/Board_Driver.c:315:9:Board_CheckEndCondition	8	static
+../Core/Src/Board_Driver.c:327:6:Board_PlayPolling	8	static

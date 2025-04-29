@@ -1,3 +1,4 @@
+"./Core/Src/AI_Driver.o"
 "./Core/Src/ApplicationCode.o"
 "./Core/Src/Board_Driver.o"
 "./Core/Src/LCD_Driver.o"

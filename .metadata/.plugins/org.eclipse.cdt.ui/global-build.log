@@ -1,4 +1,11 @@
-18:31:08 **** Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:51:51 **** Clean-only build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 clean 
+rm -rf ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.su ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.cyclo ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.su
+rm -rf ./Core/Startup/startup_stm32f429zitx.d ./Core/Startup/startup_stm32f429zitx.o
+rm -rf ./Core/Src/ApplicationCode.cyclo ./Core/Src/ApplicationCode.d ./Core/Src/ApplicationCode.o ./Core/Src/ApplicationCode.su ./Core/Src/Board_Driver.cyclo ./Core/Src/Board_Driver.d ./Core/Src/Board_Driver.o ./Core/Src/Board_Driver.su ./Core/Src/LCD_Driver.cyclo ./Core/Src/LCD_Driver.d ./Core/Src/LCD_Driver.o ./Core/Src/LCD_Driver.su ./Core/Src/Screen_Driver.cyclo ./Core/Src/Screen_Driver.d ./Core/Src/Screen_Driver.o ./Core/Src/Screen_Driver.su ./Core/Src/fonts.cyclo ./Core/Src/fonts.d ./Core/Src/fonts.o ./Core/Src/fonts.su ./Core/Src/ili9341.cyclo ./Core/Src/ili9341.d ./Core/Src/ili9341.o ./Core/Src/ili9341.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/stmpe811.cyclo ./Core/Src/stmpe811.d ./Core/Src/stmpe811.o ./Core/Src/stmpe811.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
+rm -rf ECEN2370_StarterCode_SP25.elf ECEN2370_StarterCode_SP25.list ECEN2370_StarterCode_SP25.map default.size.stdout
+ 
+18:51:53 **** Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
 arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
@@ -42,19 +49,43 @@ Finished building target: ECEN2370_StarterCode_SP25.elf
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  39012	    128	 156408	 195548	  2fbdc	ECEN2370_StarterCode_SP25.elf
+  39060	    128	 156408	 195596	  2fc0c	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-18:31:15 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:52:01 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  39012	    128	 156408	 195548	  2fbdc	ECEN2370_StarterCode_SP25.elf
+  39060	    128	 156408	 195596	  2fc0c	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
-18:32:53 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+18:56:20 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38740	    128	 156416	 195284	  2fad4	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+18:56:24 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38740	    128	 156416	 195284	  2fad4	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+18:59:57 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
 arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -63,20 +94,353 @@ Finished building target: ECEN2370_StarterCode_SP25.elf
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-18:32:57 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+19:00:11 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
-18:47:43 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+19:17:31 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/AI_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AI_Driver.d" -MT"Core/Src/AI_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/AI_Driver.o"
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/LCD_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/LCD_Driver.d" -MT"Core/Src/LCD_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/LCD_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+arm-none-eabi-gcc "../Core/Src/fonts.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/fonts.d" -MT"Core/Src/fonts.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fonts.o"
+arm-none-eabi-gcc "../Core/Src/ili9341.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ili9341.d" -MT"Core/Src/ili9341.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ili9341.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/stmpe811.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stmpe811.d" -MT"Core/Src/stmpe811.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stmpe811.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+../Core/Src/AI_Driver.c: In function 'MX_RNG_Init':
+../Core/Src/AI_Driver.c:31:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   31 |     Error_Handler();
+      |     ^~~~~~~~~~~~~
+../Core/Src/AI_Driver.c: At top level:
+../Core/Src/AI_Driver.c:18:13: warning: 'MX_RNG_Init' defined but not used [-Wunused-function]
+   18 | static void MX_RNG_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'MX_RNG_Init'; did you mean 'HAL_RNG_Init'? [-Wimplicit-function-declaration]
+  101 |   MX_RNG_Init();
+      |   ^~~~~~~~~~~
+      |   HAL_RNG_Init
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/main.c:101: undefined reference to `MX_RNG_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: ECEN2370_StarterCode_SP25.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:20:10 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/AI_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AI_Driver.d" -MT"Core/Src/AI_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/AI_Driver.o"
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/AI_Driver.c: In function 'MX_RNG_Init':
+../Core/Src/AI_Driver.c:30:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   30 |     Error_Handler();
+      |     ^~~~~~~~~~~~~
+../Core/Src/AI_Driver.c: At top level:
+../Core/Src/AI_Driver.c:17:13: warning: 'MX_RNG_Init' defined but not used [-Wunused-function]
+   17 | static void MX_RNG_Init(void)
+      |             ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'MX_RNG_Init'; did you mean 'HAL_RNG_Init'? [-Wimplicit-function-declaration]
+  101 |   MX_RNG_Init();
+      |   ^~~~~~~~~~~
+      |   HAL_RNG_Init
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/main.c:101: undefined reference to `MX_RNG_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: ECEN2370_StarterCode_SP25.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:20:46 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'MX_RNG_Init'; did you mean 'HAL_RNG_Init'? [-Wimplicit-function-declaration]
+  101 |   MX_RNG_Init();
+      |   ^~~~~~~~~~~
+      |   HAL_RNG_Init
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/main.c:101: undefined reference to `MX_RNG_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: ECEN2370_StarterCode_SP25.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:21:45 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/Board_Driver.h:12,
+                 from ../Core/Inc/ApplicationCode.h:9,
+                 from ../Core/Src/ApplicationCode.c:8:
+../Core/Inc/AI_Driver.h:13:13: warning: 'MX_RNG_Init' declared 'static' but never defined [-Wunused-function]
+   13 | static void MX_RNG_Init(void);
+      |             ^~~~~~~~~~~
+In file included from ../Core/Inc/Board_Driver.h:12,
+                 from ../Core/Src/Board_Driver.c:10:
+../Core/Inc/AI_Driver.h:13:13: warning: 'MX_RNG_Init' declared 'static' but never defined [-Wunused-function]
+   13 | static void MX_RNG_Init(void);
+      |             ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'ApplicationInit' [-Wimplicit-function-declaration]
+  106 |   ApplicationInit(); // Initializes the LCD functionality
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:117:5: warning: implicit declaration of function 'resetBoard' [-Wimplicit-function-declaration]
+  117 |     resetBoard();
+      |     ^~~~~~~~~~
+../Core/Src/main.c:119:5: warning: implicit declaration of function 'LCD_StartUp' [-Wimplicit-function-declaration]
+  119 |     LCD_StartUp();
+      |     ^~~~~~~~~~~
+../Core/Src/main.c:121:5: warning: implicit declaration of function 'startGamePolling' [-Wimplicit-function-declaration]
+  121 |     startGamePolling(); // Enters infinite loop here
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'displayEndScreen' [-Wimplicit-function-declaration]
+  123 |     displayEndScreen();
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../Core/Inc/Board_Driver.h:12,
+                 from ../Core/Inc/ApplicationCode.h:9,
+                 from ../Core/Src/main.c:24:
+../Core/Inc/AI_Driver.h: At top level:
+../Core/Inc/AI_Driver.h:13:13: warning: 'MX_RNG_Init' used but never defined
+   13 | static void MX_RNG_Init(void);
+      |             ^~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/main.c:101: undefined reference to `MX_RNG_Init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: ECEN2370_StarterCode_SP25.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+19:22:06 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/AI_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AI_Driver.d" -MT"Core/Src/AI_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/AI_Driver.o"
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/AI_Driver.c: In function 'MX_RNG_Init':
+../Core/Src/AI_Driver.c:30:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   30 |     Error_Handler();
+      |     ^~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'ApplicationInit' [-Wimplicit-function-declaration]
+  106 |   ApplicationInit(); // Initializes the LCD functionality
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:117:5: warning: implicit declaration of function 'resetBoard' [-Wimplicit-function-declaration]
+  117 |     resetBoard();
+      |     ^~~~~~~~~~
+../Core/Src/main.c:119:5: warning: implicit declaration of function 'LCD_StartUp' [-Wimplicit-function-declaration]
+  119 |     LCD_StartUp();
+      |     ^~~~~~~~~~~
+../Core/Src/main.c:121:5: warning: implicit declaration of function 'startGamePolling' [-Wimplicit-function-declaration]
+  121 |     startGamePolling(); // Enters infinite loop here
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'displayEndScreen' [-Wimplicit-function-declaration]
+  123 |     displayEndScreen();
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+19:22:53 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/AI_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AI_Driver.d" -MT"Core/Src/AI_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/AI_Driver.o"
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+20:01:53 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/AI_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AI_Driver.d" -MT"Core/Src/AI_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/AI_Driver.o"
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'ApplicationInit' [-Wimplicit-function-declaration]
+  106 |   ApplicationInit(); // Initializes the LCD functionality
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:117:5: warning: implicit declaration of function 'resetBoard' [-Wimplicit-function-declaration]
+  117 |     resetBoard();
+      |     ^~~~~~~~~~
+../Core/Src/main.c:119:5: warning: implicit declaration of function 'LCD_StartUp' [-Wimplicit-function-declaration]
+  119 |     LCD_StartUp();
+      |     ^~~~~~~~~~~
+../Core/Src/main.c:121:5: warning: implicit declaration of function 'startGamePolling' [-Wimplicit-function-declaration]
+  121 |     startGamePolling(); // Enters infinite loop here
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'displayEndScreen' [-Wimplicit-function-declaration]
+  123 |     displayEndScreen();
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+20:07:29 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+20:17:27 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'ApplicationInit' [-Wimplicit-function-declaration]
+  106 |   ApplicationInit(); // Initializes the LCD functionality
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:117:5: warning: implicit declaration of function 'resetBoard' [-Wimplicit-function-declaration]
+  117 |     resetBoard();
+      |     ^~~~~~~~~~
+../Core/Src/main.c:119:5: warning: implicit declaration of function 'LCD_StartUp' [-Wimplicit-function-declaration]
+  119 |     LCD_StartUp();
+      |     ^~~~~~~~~~~
+../Core/Src/main.c:121:5: warning: implicit declaration of function 'startGamePolling' [-Wimplicit-function-declaration]
+  121 |     startGamePolling(); // Enters infinite loop here
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'displayEndScreen' [-Wimplicit-function-declaration]
+  123 |     displayEndScreen();
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38692	    128	 156416	 195236	  2faa4	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+20:17:55 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38692	    128	 156416	 195236	  2faa4	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+20:20:55 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'ApplicationInit' [-Wimplicit-function-declaration]
+  106 |   ApplicationInit(); // Initializes the LCD functionality
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:117:5: warning: implicit declaration of function 'resetBoard' [-Wimplicit-function-declaration]
+  117 |     resetBoard();
+      |     ^~~~~~~~~~
+../Core/Src/main.c:119:5: warning: implicit declaration of function 'LCD_StartUp' [-Wimplicit-function-declaration]
+  119 |     LCD_StartUp();
+      |     ^~~~~~~~~~~
+../Core/Src/main.c:121:5: warning: implicit declaration of function 'startGamePolling' [-Wimplicit-function-declaration]
+  121 |     startGamePolling(); // Enters infinite loop here
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'displayEndScreen' [-Wimplicit-function-declaration]
+  123 |     displayEndScreen();
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38744	    128	 156416	 195288	  2fad8	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+20:33:41 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:3: warning: implicit declaration of function 'ApplicationInit' [-Wimplicit-function-declaration]
+  106 |   ApplicationInit(); // Initializes the LCD functionality
+      |   ^~~~~~~~~~~~~~~
+../Core/Src/main.c:117:5: warning: implicit declaration of function 'resetBoard' [-Wimplicit-function-declaration]
+  117 |     resetBoard();
+      |     ^~~~~~~~~~
+../Core/Src/main.c:119:5: warning: implicit declaration of function 'LCD_StartUp' [-Wimplicit-function-declaration]
+  119 |     LCD_StartUp();
+      |     ^~~~~~~~~~~
+../Core/Src/main.c:121:5: warning: implicit declaration of function 'startGamePolling' [-Wimplicit-function-declaration]
+  121 |     startGamePolling(); // Enters infinite loop here
+      |     ^~~~~~~~~~~~~~~~
+../Core/Src/main.c:123:5: warning: implicit declaration of function 'displayEndScreen' [-Wimplicit-function-declaration]
+  123 |     displayEndScreen();
+      |     ^~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38800	    128	 156416	 195344	  2fb10	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+20:38:50 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:3: warning: implicit declaration of function 'MX_RNG_Init'; did you mean 'HAL_RNG_Init'? [-Wimplicit-function-declaration]
+  101 |   MX_RNG_Init();
+      |   ^~~~~~~~~~~
+      |   HAL_RNG_Init
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  38800	    128	 156416	 195344	  2fb10	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+20:40:28 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/AI_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/AI_Driver.d" -MT"Core/Src/AI_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/AI_Driver.o"
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: ECEN2370_StarterCode_SP25.elf
@@ -84,20 +448,107 @@ Finished building target: ECEN2370_StarterCode_SP25.elf
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
+  38800	    128	 156416	 195344	  2fb10	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-18:47:49 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+20:40:32 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  39020	    128	 156408	 195556	  2fbe4	ECEN2370_StarterCode_SP25.elf
+  38800	    128	 156416	 195344	  2fb10	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
-18:55:27 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+21:07:13 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/Screen_Driver.c: In function 'Screen_OpenStartupScreen':
+../Core/Src/Screen_Driver.c:68:10: warning: variable 'isOnePlayer' set but not used [-Wunused-but-set-variable]
+   68 |     bool isOnePlayer;
+      |          ^~~~~~~~~~~
+../Core/Src/Board_Driver.c: In function 'Board_PlayPolling':
+../Core/Src/Board_Driver.c:331:42: error: 'touchdata' undeclared (first use in this function)
+  331 |         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+      |                                          ^~~~~~~~~
+../Core/Src/Board_Driver.c:331:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/Board_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:07:29 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+../Core/Src/Board_Driver.c: In function 'Board_PlayPolling':
+../Core/Src/Board_Driver.c:331:42: error: 'touchdata' undeclared (first use in this function)
+  331 |         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+      |                                          ^~~~~~~~~
+../Core/Src/Board_Driver.c:331:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/Board_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:08:20 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+../Core/Src/Board_Driver.c: In function 'Board_PlayPolling':
+../Core/Src/Board_Driver.c:331:42: error: 'touchdata' undeclared (first use in this function)
+  331 |         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+      |                                          ^~~~~~~~~
+../Core/Src/Board_Driver.c:331:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/Board_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:10:34 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+../Core/Src/Board_Driver.c: In function 'Board_PlayPolling':
+../Core/Src/Board_Driver.c:331:42: error: 'touchdata' undeclared (first use in this function)
+  331 |         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+      |                                          ^~~~~~~~~
+../Core/Src/Board_Driver.c:331:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/Board_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:14:15 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/Board_Driver.o: in function `Board_PlayPolling':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/Board_Driver.c:342: undefined reference to `touchdata'
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/Screen_Driver.o: in function `Screen_OpenStartupScreen':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/Screen_Driver.c:85: undefined reference to `touchdata'
+C:/ST/STM32CubeIDE_1.17.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.1.0.202410251130/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: ./Core/Src/Screen_Driver.o: in function `Screen_DisplayPlayAgainButton':
+C:/Users/jackb/ECEN2370_Final_Project/ECEN2370_StarterCode_SP25/Debug/../Core/Src/Screen_Driver.c:214: undefined reference to `touchdata'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:64: ECEN2370_StarterCode_SP25.elf] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:19:27 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/Board_Driver.c: In function 'Board_PlayPolling':
+../Core/Src/Board_Driver.c:331:42: error: 'touchdata' undeclared (first use in this function)
+  331 |         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+      |                                          ^~~~~~~~~
+../Core/Src/Board_Driver.c:331:42: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/Board_Driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:26:58 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/Screen_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Screen_Driver.d" -MT"Core/Src/Screen_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Screen_Driver.o"
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: ECEN2370_StarterCode_SP25.elf
@@ -105,15 +556,59 @@ Finished building target: ECEN2370_StarterCode_SP25.elf
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
 arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
-  39060	    128	 156408	 195596	  2fc0c	ECEN2370_StarterCode_SP25.elf
+  38828	    128	 156416	 195372	  2fb2c	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
 Finished building: ECEN2370_StarterCode_SP25.list
  
-18:55:32 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+21:27:53 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
    text	   data	    bss	    dec	    hex	filename
-  39060	    128	 156408	 195596	  2fc0c	ECEN2370_StarterCode_SP25.elf
+  38828	    128	 156416	 195372	  2fb2c	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+21:29:24 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+../Core/Src/ApplicationCode.c: In function 'EXTI0_IRQHandler':
+../Core/Src/ApplicationCode.c:91:21: warning: the address of 'Screen_GetisOnePlayer' will always evaluate as 'true' [-Waddress]
+   91 |                 if (Screen_GetisOnePlayer){
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/ApplicationCode.c:98:1: error: expected declaration or statement at end of input
+   98 | }
+      | ^
+make: *** [Core/Src/subdir.mk:58: Core/Src/ApplicationCode.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:29:53 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+../Core/Src/ApplicationCode.c: In function 'EXTI0_IRQHandler':
+../Core/Src/ApplicationCode.c:91:21: warning: the address of 'Screen_GetisOnePlayer' will always evaluate as 'true' [-Waddress]
+   91 |                 if (Screen_GetisOnePlayer)
+      |                     ^~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
+   text	   data	    bss	    dec	    hex	filename
+  39184	    128	 156416	 195728	  2fc90	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
+21:30:45 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39184	    128	 156416	 195728	  2fc90	ECEN2370_StarterCode_SP25.elf
+Finished building: default.size.stdout
+ 
+21:30:48 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+make -j16 all 
+arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39184	    128	 156416	 195728	  2fc90	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  

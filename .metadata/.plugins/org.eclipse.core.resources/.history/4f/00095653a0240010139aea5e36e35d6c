@@ -451,11 +451,11 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   //Additional EXTI Init for button interrupt
-  EXTI->IMR &= ~(1<<0);
-  EXTI->IMR |= (1<<0);
-
-  EXTI->RTSR &= ~(1<<0);
-  EXTI->RTSR |= (1<<0);
+//  EXTI->IMR &= ~(1<<0);
+//  EXTI->IMR |= (1<<0);
+//
+//  EXTI->RTSR &= ~(1<<0);
+//  EXTI->RTSR |= (1<<0);
   HAL_NVIC_EnableIRQ(EXTI0_IRQn);
 
   /*Configure GPIO pin : ACP_RST_Pin */

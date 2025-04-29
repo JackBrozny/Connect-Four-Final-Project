@@ -5,20 +5,22 @@
  *      Author: Xavion
  */
 
-#include "stm32f4xx_hal.h"
-#include "Board_Driver.h"
 
-#include <stdio.h>
 
 
 #ifndef INC_APPLICATIONCODE_H_
 #define INC_APPLICATIONCODE_H_
 
+#include "stm32f4xx_hal.h"
+#include "Board_Driver.h"
+#include <stdio.h>
+
 void ApplicationInit(void);
 void resetBoard();
 void LCD_StartUp(void);
 void startGamePolling();
-void displayEndScreen(uint32_t time);
+void displayEndScreen();
+extern void Error_Handler(void);
 
 #if (COMPILE_TOUCH_FUNCTIONS == 1)
 void LCD_Touch_Polling_Demo(void);

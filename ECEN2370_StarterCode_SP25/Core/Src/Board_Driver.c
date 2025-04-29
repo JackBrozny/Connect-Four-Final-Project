@@ -92,6 +92,31 @@ void Board_DropPiece(){
     Board_SetHoveringPiece();
 }
 
+void Board_PlayAIMove(){ // If this was coded better this wouldn't be called in 2 player mode
+    if (Screen_GetisOnePlayer()){
+        uint8_t col = AI_GenerateColumn();
+
+        if (col == hoveringPiecePos){
+            HAL_Delay(300);
+        }
+        else if (col > hoveringPiecePos){
+            while (hoveringPiecePos != col){
+                Board_ShiftHoveringPieceRight();
+                HAL_Delay(300);
+            }
+        }
+        else{
+            while (hoveringPiecePos != col){
+                Board_ShiftHoveringPieceLeft();
+                HAL_Delay(300);
+            }
+        }
+
+        Board_DropPiece();
+    }
+}
+
+
 bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force checks for win in all 4 directions
     uint8_t matchCount = 1; // Number of pieces in a row
 
@@ -303,10 +328,10 @@ void Board_PlayPolling(){
     isPlayerBlue = true;
     Board_SetHoveringPiece();
     while (isStillPlaying){ //Used polling demo logic
-        if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
+        if (returnTouchStateAndLocation(Screen_GetPTouchData()) == STMPE811_State_Pressed) {
 			/* Touch valid */
 
-            if (TM_STMPE811_TouchInRectangle(&touchdata, 0, 0, LCD_PIXEL_WIDTH/2, LCD_PIXEL_HEIGHT)){
+            if (TM_STMPE811_TouchInRectangle(Screen_GetPTouchData(), 0, 0, LCD_PIXEL_WIDTH/2, LCD_PIXEL_HEIGHT)){
                 Board_ShiftHoveringPieceRight();
             }
             else{

@@ -12,9 +12,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-extern STMPE811_TouchData touchdata;
+
 
 #define SLOT_SPACE LCD_PIXEL_WIDTH/8
+#define WIN 1
+#define TIE 2
 
 #define SCREEN_COLUMN_1 SLOT_SPACE
 #define SCREEN_COLUMN_2 SLOT_SPACE*2
@@ -33,8 +35,8 @@ extern STMPE811_TouchData touchdata;
 
 
 void Screen_OpenStartupScreen();
-void Screen_OpenPlayScreen(bool isOnePlayer);
-void Screen_OpenEndScreen(bool isPlayerBlue, uint8_t result, uint32_t time);
+void Screen_OpenPlayScreen();
+void Screen_OpenEndScreen(bool isPlayerBlue, uint8_t result);
 void Screen_DisplayPlayAgainButton();
 void Screen_DisplayHoveringPiece(bool isPlayerBlue);
 void Screen_MoveHoveringPieceRight(bool isPlayerBlue);
@@ -44,6 +46,11 @@ void Screen_DrawPiece(uint16_t Xpos, uint16_t Ypos, bool isPlayerBlue);
 // Converts a row or column position to its pixel coordinates on the LCD screen
 uint16_t Screen_RowToCoords(uint8_t position);
 uint16_t Screen_ColumnToCoords(uint8_t position);
+
+bool Screen_GetisOnePlayer();
+void Screen_SetisOnePlayer(bool newVal);
+
+STMPE811_TouchData* Screen_GetPTouchData();
 
 
 #endif 

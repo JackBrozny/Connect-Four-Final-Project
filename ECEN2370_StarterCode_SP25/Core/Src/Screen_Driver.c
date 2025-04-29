@@ -1,12 +1,18 @@
 
 #include "Screen_Driver.h"
 
+static STMPE811_TouchData touchdata;
+
 static uint16_t hoveringPieceXpos;
 static uint16_t hoveringPieceYpos;
-STMPE811_TouchData touchdata;
 
 static uint8_t redWins;
 static uint8_t blueWins;
+static uint32_t startTick;
+static uint32_t endTick;
+
+static bool isOnePlayer;
+
 
 void Screen_OpenStartupScreen(){
 	LCD_Clear(0, LCD_COLOR_WHITE);
@@ -58,7 +64,6 @@ void Screen_OpenStartupScreen(){
     LCD_DisplayChar(LCD_PIXEL_WIDTH - 75,LCD_PIXEL_HEIGHT * 2 / 3,'P');
     LCD_DisplayChar(LCD_PIXEL_WIDTH - 85,LCD_PIXEL_HEIGHT * 2 / 3,'2');
 
-    bool isOnePlayer;
 
     while (1){ //Used polling demo logic
         if (returnTouchStateAndLocation(&touchdata) == STMPE811_State_Pressed) {
@@ -77,10 +82,10 @@ void Screen_OpenStartupScreen(){
         }
     }
 
-    Screen_OpenPlayScreen(isOnePlayer);
+    Screen_OpenPlayScreen();
 }
 
-void Screen_OpenPlayScreen(bool isOnePlayer){
+void Screen_OpenPlayScreen(){
 
 
     LCD_Clear(0, LCD_COLOR_WHITE);
@@ -96,38 +101,52 @@ void Screen_OpenPlayScreen(bool isOnePlayer){
         }
         Ypos += SLOT_SPACE;
     }
+
+    startTick = HAL_GetTick();
 }
 
-void Screen_OpenEndScreen(bool isPlayerBlue, uint8_t result, uint32_t time){
+void Screen_OpenEndScreen(bool isPlayerBlue, uint8_t result){
+    endTick = HAL_GetTick();
+
     LCD_SetFont(&Font16x24);
 
-    if (isPlayerBlue){
-        if (result == 1)
-            blueWins++;
-        LCD_DisplayChar(55,20,'B');
-        LCD_DisplayChar(70,20,'l');
-        LCD_DisplayChar(85,20,'u');
-        LCD_DisplayChar(100,20,'e');
-
-        LCD_DisplayChar(120,20,'W');
-        LCD_DisplayChar(135,20,'i');
-        LCD_DisplayChar(150,20,'n');
-        LCD_DisplayChar(165,20,'s');
-        LCD_DisplayChar(180,20,'!');
+    if (result == WIN)
+    {
+        if (isPlayerBlue){
+            if (result == 1)
+                blueWins++;
+            LCD_DisplayChar(55,20,'B');
+            LCD_DisplayChar(70,20,'l');
+            LCD_DisplayChar(85,20,'u');
+            LCD_DisplayChar(100,20,'e');
+    
+            LCD_DisplayChar(120,20,'W');
+            LCD_DisplayChar(135,20,'i');
+            LCD_DisplayChar(150,20,'n');
+            LCD_DisplayChar(165,20,'s');
+            LCD_DisplayChar(180,20,'!');
+        }
+        else{
+            if (result == 1)
+                redWins++;
+            LCD_DisplayChar(55,20,'R');
+            LCD_DisplayChar(70,20,'e');
+            LCD_DisplayChar(85,20,'d');
+    
+            LCD_DisplayChar(105,20,'W');
+            LCD_DisplayChar(120,20,'i');
+            LCD_DisplayChar(135,20,'n');
+            LCD_DisplayChar(150,20,'s');
+            LCD_DisplayChar(165,20,'!');
+        }
     }
-    else{
-        if (result == 1)
-            redWins++;
-        LCD_DisplayChar(55,20,'R');
-        LCD_DisplayChar(70,20,'e');
-        LCD_DisplayChar(85,20,'d');
-
-        LCD_DisplayChar(105,20,'W');
-        LCD_DisplayChar(120,20,'i');
-        LCD_DisplayChar(135,20,'n');
-        LCD_DisplayChar(150,20,'s');
-        LCD_DisplayChar(165,20,'!');
+    else if (result == TIE){
+        LCD_DisplayChar(95,20,'T');
+        LCD_DisplayChar(110,20,'i');
+        LCD_DisplayChar(125,20,'e');
+        LCD_DisplayChar(140,20,'!');
     }
+    
     HAL_Delay(3000);
     LCD_Clear(0, LCD_COLOR_WHITE);
 
@@ -149,6 +168,8 @@ void Screen_OpenEndScreen(bool isPlayerBlue, uint8_t result, uint32_t time){
     LCD_DisplayChar(40,80,'m');
     LCD_DisplayChar(55,80,'e');
     LCD_DisplayChar(70,80,':');
+
+    uint32_t time = (endTick - startTick) / 1000; // Convert to seconds
 
     uint32_t hundredsDigit = time / 100;
     time %= 100;
@@ -278,4 +299,16 @@ uint16_t Screen_ColumnToCoords(uint8_t position){
         default:
             return 0;
     }
+}
+
+bool Screen_GetisOnePlayer(){
+    return isOnePlayer;
+}
+
+void Screen_SetisOnePlayer(bool newVal){
+    isOnePlayer = newVal;
+}
+
+STMPE811_TouchData* Screen_GetPTouchData(){
+    return &touchdata;
 }

@@ -1,6 +1,4 @@
-Core/Src/Board_Driver.o: ../Core/Src/Board_Driver.c \
- ../Core/Inc/Board_Driver.h ../Core/Inc/Screen_Driver.h \
- ../Core/Inc/LCD_Driver.h \
+Core/Src/AI_Driver.o: ../Core/Src/AI_Driver.c ../Core/Inc/AI_Driver.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -33,12 +31,8 @@ Core/Src/Board_Driver.o: ../Core/Src/Board_Driver.c \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- ../Core/Inc/ili9341.h ../Core/Inc/fonts.h ../Core/Inc/stmpe811.h \
- ../Core/Inc/AI_Driver.h
-../Core/Inc/Board_Driver.h:
-../Core/Inc/Screen_Driver.h:
-../Core/Inc/LCD_Driver.h:
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+../Core/Inc/AI_Driver.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
@@ -72,7 +66,3 @@ Core/Src/Board_Driver.o: ../Core/Src/Board_Driver.c \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
-../Core/Inc/ili9341.h:
-../Core/Inc/fonts.h:
-../Core/Inc/stmpe811.h:
-../Core/Inc/AI_Driver.h:

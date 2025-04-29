@@ -6,5 +6,6 @@
         "screen_driver.h": "c",
         "stdio.h": "c",
         "stm32f4xx_hal.h": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
