@@ -1,10 +1,19 @@
-21:48:07 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
+11:40:36 **** Incremental Build of configuration Debug for project ECEN2370_StarterCode_SP25 ****
 make -j16 all 
+arm-none-eabi-gcc "../Core/Src/ApplicationCode.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/ApplicationCode.d" -MT"Core/Src/ApplicationCode.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ApplicationCode.o"
+arm-none-eabi-gcc "../Core/Src/Board_Driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board_Driver.d" -MT"Core/Src/Board_Driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board_Driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "ECEN2370_StarterCode_SP25.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\jackb\ECEN2370_Final_Project\ECEN2370_StarterCode_SP25\STM32F429ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ECEN2370_StarterCode_SP25.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ECEN2370_StarterCode_SP25.elf
+ 
 arm-none-eabi-size  ECEN2370_StarterCode_SP25.elf 
+arm-none-eabi-objdump -h -S ECEN2370_StarterCode_SP25.elf  > "ECEN2370_StarterCode_SP25.list"
    text	   data	    bss	    dec	    hex	filename
   39252	    128	 156416	 195796	  2fcd4	ECEN2370_StarterCode_SP25.elf
 Finished building: default.size.stdout
  
+Finished building: ECEN2370_StarterCode_SP25.list
+ 
 
-21:48:08 Build Finished. 0 errors, 0 warnings. (took 477ms)
+11:40:38 Build Finished. 0 errors, 0 warnings. (took 1s.753ms)
 

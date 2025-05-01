@@ -18,12 +18,12 @@ void Screen_OpenStartupScreen(){
 	LCD_Clear(0, LCD_COLOR_WHITE);
     HAL_Delay(200);
     
-    // //Flashy intro
-    // LCD_Draw_Expanding_Circle(100, 100, LCD_COLOR_BLUE);
-    // LCD_Draw_Expanding_Circle(200, 150, LCD_COLOR_YELLOW);    
-    // LCD_Draw_Expanding_Circle(130, 250, LCD_COLOR_GREEN);
-    // LCD_Draw_Expanding_Circle(LCD_X_CENTER, LCD_Y_CENTER, LCD_COLOR_WHITE);
-    // HAL_Delay(1000);
+    //Flashy intro
+    LCD_Draw_Expanding_Circle(100, 100, LCD_COLOR_BLUE);
+    LCD_Draw_Expanding_Circle(200, 150, LCD_COLOR_YELLOW);    
+    LCD_Draw_Expanding_Circle(130, 250, LCD_COLOR_GREEN);
+    LCD_Draw_Expanding_Circle(LCD_X_CENTER, LCD_Y_CENTER, LCD_COLOR_WHITE);
+    HAL_Delay(1000);
 
     //Display title
 	LCD_SetTextColor(LCD_COLOR_BLACK);
@@ -86,8 +86,6 @@ void Screen_OpenStartupScreen(){
 }
 
 void Screen_OpenPlayScreen(){
-
-
     LCD_Clear(0, LCD_COLOR_WHITE);
     HAL_Delay(500);
 

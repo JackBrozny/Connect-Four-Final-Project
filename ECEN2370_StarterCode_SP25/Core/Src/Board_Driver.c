@@ -179,7 +179,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     ////////////////////////////CHECK VERTICAL 4-IN-A-ROWS
     rowIter = placedRow - 1;
     colIter = placedCol;
-    while (rowIter >= BOARD_ROW_1){ //Iterates columns to the left
+    while (rowIter >= BOARD_ROW_1){ //Iterates rows down
         comparePieceColor = Board[rowIter][colIter];
         if (placedPieceColor == comparePieceColor){
             matchCount++;
@@ -196,7 +196,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
         }
     }
     rowIter = placedRow + 1;
-    while (rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (rowIter <= BOARD_ROW_6){ // Iterates rows up
         comparePieceColor = Board[rowIter][colIter];
         if(placedPieceColor == comparePieceColor){
             matchCount++;
@@ -218,7 +218,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     ////////////////////////////CHECK DIAGONAL TOP LEFT TO BOTTOM RIGHT 4-IN-A-ROWS
     rowIter = placedRow - 1;
     colIter = placedCol - 1;
-    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left and rows up
         comparePieceColor = Board[rowIter][colIter];
         if (placedPieceColor == comparePieceColor){
             matchCount++;
@@ -237,7 +237,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     }
     rowIter = placedRow + 1;
     colIter = placedCol + 1;
-    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right and rows down
         comparePieceColor = Board[rowIter][colIter];
         if(placedPieceColor == comparePieceColor){
             matchCount++;
@@ -260,7 +260,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     ////////////////////////////CHECK DIAGONAL TOP RIGHT TO BOTTOM LEFT 4-IN-A-ROWS
     rowIter = placedRow + 1;
     colIter = placedCol - 1;
-    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left and rows down
         comparePieceColor = Board[rowIter][colIter];
         if (placedPieceColor == comparePieceColor){
             matchCount++;
@@ -279,7 +279,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     }
     rowIter = placedRow - 1;
     colIter = placedCol + 1;
-    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right
+    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right and rows up
         comparePieceColor = Board[rowIter][colIter];
         if(placedPieceColor == comparePieceColor){
             matchCount++;

@@ -6,15 +6,10 @@
  */
 
 #include "AI_Driver.h"
-#include <stdint.h>
 
- RNG_HandleTypeDef hrng;
+RNG_HandleTypeDef hrng;
 
- /**
-  * @brief RNG Initialization Function
-  * @param None
-  * @retval None
-  */
+
 void MX_RNG_Init(void)
 {
 

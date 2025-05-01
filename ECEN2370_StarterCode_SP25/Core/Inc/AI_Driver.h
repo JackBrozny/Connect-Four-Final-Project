@@ -10,8 +10,17 @@
 
 #include "stm32f4xx_hal.h"
 
+ /**
+  * @brief RNG Initialization Function
+  * @param None
+  * @retval None
+  */
 void MX_RNG_Init(void);
 
+/**
+ * @brief Returns a random 32 bit integer from the RNG peripheral.
+ * 
+ */
 uint32_t AI_GenerateColumn();
 
 

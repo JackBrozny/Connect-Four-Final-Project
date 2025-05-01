@@ -407,10 +407,10 @@ Disassembly of section .text:
  800057e:	bf00      	nop
 
 08000580 <MX_RNG_Init>:
-  * @brief RNG Initialization Function
-  * @param None
-  * @retval None
-  */
+
+RNG_HandleTypeDef hrng;
+
+
 void MX_RNG_Init(void)
 {
  8000580:	b580      	push	{r7, lr}
@@ -1290,7 +1290,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
     colIter = placedCol;
  8000aa4:	79bb      	ldrb	r3, [r7, #6]
  8000aa6:	733b      	strb	r3, [r7, #12]
-    while (rowIter >= BOARD_ROW_1){ //Iterates columns to the left
+    while (rowIter >= BOARD_ROW_1){ //Iterates rows down
  8000aa8:	e021      	b.n	8000aee <Board_CheckForWin+0x136>
         comparePieceColor = Board[rowIter][colIter];
  8000aaa:	f997 200d 	ldrsb.w	r2, [r7, #13]
@@ -1334,7 +1334,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
                 return true;
  8000aea:	2301      	movs	r3, #1
  8000aec:	e127      	b.n	8000d3e <Board_CheckForWin+0x386>
-    while (rowIter >= BOARD_ROW_1){ //Iterates columns to the left
+    while (rowIter >= BOARD_ROW_1){ //Iterates rows down
  8000aee:	f997 300d 	ldrsb.w	r3, [r7, #13]
  8000af2:	2b00      	cmp	r3, #0
  8000af4:	dad9      	bge.n	8000aaa <Board_CheckForWin+0xf2>
@@ -1349,7 +1349,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000afc:	3301      	adds	r3, #1
  8000afe:	b2db      	uxtb	r3, r3
  8000b00:	737b      	strb	r3, [r7, #13]
-    while (rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (rowIter <= BOARD_ROW_6){ // Iterates rows up
  8000b02:	e018      	b.n	8000b36 <Board_CheckForWin+0x17e>
         comparePieceColor = Board[rowIter][colIter];
  8000b04:	f997 200d 	ldrsb.w	r2, [r7, #13]
@@ -1377,7 +1377,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000b30:	3301      	adds	r3, #1
  8000b32:	b2db      	uxtb	r3, r3
  8000b34:	737b      	strb	r3, [r7, #13]
-    while (rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (rowIter <= BOARD_ROW_6){ // Iterates rows up
  8000b36:	f997 300d 	ldrsb.w	r3, [r7, #13]
  8000b3a:	2b05      	cmp	r3, #5
  8000b3c:	dde2      	ble.n	8000b04 <Board_CheckForWin+0x14c>
@@ -1418,7 +1418,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000b60:	3b01      	subs	r3, #1
  8000b62:	b2db      	uxtb	r3, r3
  8000b64:	733b      	strb	r3, [r7, #12]
-    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left and rows up
  8000b66:	e027      	b.n	8000bb8 <Board_CheckForWin+0x200>
         comparePieceColor = Board[rowIter][colIter];
  8000b68:	f997 200d 	ldrsb.w	r2, [r7, #13]
@@ -1468,7 +1468,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
                 return true;
  8000bb4:	2301      	movs	r3, #1
  8000bb6:	e0c2      	b.n	8000d3e <Board_CheckForWin+0x386>
-    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (rowIter >= BOARD_ROW_1 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left and rows up
  8000bb8:	f997 300d 	ldrsb.w	r3, [r7, #13]
  8000bbc:	2b00      	cmp	r3, #0
  8000bbe:	db05      	blt.n	8000bcc <Board_CheckForWin+0x214>
@@ -1491,7 +1491,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000bd6:	3301      	adds	r3, #1
  8000bd8:	b2db      	uxtb	r3, r3
  8000bda:	733b      	strb	r3, [r7, #12]
-    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right and rows down
  8000bdc:	e01e      	b.n	8000c1c <Board_CheckForWin+0x264>
         comparePieceColor = Board[rowIter][colIter];
  8000bde:	f997 200d 	ldrsb.w	r2, [r7, #13]
@@ -1525,7 +1525,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000c16:	3301      	adds	r3, #1
  8000c18:	b2db      	uxtb	r3, r3
  8000c1a:	733b      	strb	r3, [r7, #12]
-    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right
+    while (colIter <= BOARD_COLUMN_7 && rowIter <= BOARD_ROW_6){ // Iterates columns to the right and rows down
  8000c1c:	f997 300c 	ldrsb.w	r3, [r7, #12]
  8000c20:	2b06      	cmp	r3, #6
  8000c22:	dc05      	bgt.n	8000c30 <Board_CheckForWin+0x278>
@@ -1569,7 +1569,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000c4e:	3b01      	subs	r3, #1
  8000c50:	b2db      	uxtb	r3, r3
  8000c52:	733b      	strb	r3, [r7, #12]
-    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left and rows down
  8000c54:	e02e      	b.n	8000cb4 <Board_CheckForWin+0x2fc>
         comparePieceColor = Board[rowIter][colIter];
  8000c56:	f997 200d 	ldrsb.w	r2, [r7, #13]
@@ -1623,7 +1623,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
                 return true;
  8000cb0:	2301      	movs	r3, #1
  8000cb2:	e044      	b.n	8000d3e <Board_CheckForWin+0x386>
-    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left
+    while (rowIter <= BOARD_ROW_6 && colIter >= BOARD_COLUMN_1){ //Iterates columns to the left and rows down
  8000cb4:	f997 300d 	ldrsb.w	r3, [r7, #13]
  8000cb8:	2b05      	cmp	r3, #5
  8000cba:	dc05      	bgt.n	8000cc8 <Board_CheckForWin+0x310>
@@ -1646,7 +1646,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000cd2:	3301      	adds	r3, #1
  8000cd4:	b2db      	uxtb	r3, r3
  8000cd6:	733b      	strb	r3, [r7, #12]
-    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right
+    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right and rows up
  8000cd8:	e01e      	b.n	8000d18 <Board_CheckForWin+0x360>
         comparePieceColor = Board[rowIter][colIter];
  8000cda:	f997 200d 	ldrsb.w	r2, [r7, #13]
@@ -1680,7 +1680,7 @@ bool Board_CheckForWin(uint8_t placedRow, uint8_t placedCol){ // Brute force che
  8000d12:	3301      	adds	r3, #1
  8000d14:	b2db      	uxtb	r3, r3
  8000d16:	733b      	strb	r3, [r7, #12]
-    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right
+    while (colIter <= BOARD_COLUMN_7 && rowIter >= BOARD_ROW_1){ // Iterates columns to the right and rows up
  8000d18:	f997 300c 	ldrsb.w	r3, [r7, #12]
  8000d1c:	2b06      	cmp	r3, #6
  8000d1e:	dc05      	bgt.n	8000d2c <Board_CheckForWin+0x374>
@@ -3060,8 +3060,6 @@ void Screen_OpenPlayScreen(){
  80015fc:	b580      	push	{r7, lr}
  80015fe:	b082      	sub	sp, #8
  8001600:	af00      	add	r7, sp, #0
-
-
     LCD_Clear(0, LCD_COLOR_WHITE);
  8001602:	f64f 71ff 	movw	r1, #65535	@ 0xffff
  8001606:	2000      	movs	r0, #0
