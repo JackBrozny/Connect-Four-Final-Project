@@ -1,0 +1,59 @@
+\doxysection{Screen\+\_\+\+Driver.\+h}
+\hypertarget{_screen___driver_8h_source}{}\label{_screen___driver_8h_source}\mbox{\hyperlink{_screen___driver_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \ }
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#ifndef\ INC\_SCREEN\_DRIVER\_H\_}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#define\ INC\_SCREEN\_DRIVER\_H\_}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_l_c_d___driver_8h}{LCD\_Driver.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <stdbool.h>}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ SLOT\_SPACE\ LCD\_PIXEL\_WIDTH/8}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ WIN\ 1}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#define\ TIE\ 2}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_1\ SLOT\_SPACE}}
+\DoxyCodeLine{00054\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_2\ SLOT\_SPACE*2}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_3\ SLOT\_SPACE*3}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_4\ SLOT\_SPACE*4}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_5\ SLOT\_SPACE*5}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_6\ SLOT\_SPACE*6}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#define\ SCREEN\_COLUMN\_7\ SLOT\_SPACE*7}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#define\ SCREEN\_ROW\_1\ SLOT\_SPACE*5}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#define\ SCREEN\_ROW\_2\ SLOT\_SPACE*6}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#define\ SCREEN\_ROW\_3\ SLOT\_SPACE*7}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#define\ SCREEN\_ROW\_4\ SLOT\_SPACE*8}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ SCREEN\_ROW\_5\ SLOT\_SPACE*9}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#define\ SCREEN\_ROW\_6\ SLOT\_SPACE*10}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00083\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_a08aa9bcf10fb4f03ef4f67bbf55ece75}{Screen\_OpenStartupScreen}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_a6e82f008a0dc7cc765a1aae87d0cc181}{Screen\_OpenPlayScreen}}();}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00102\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_aad7e1fd6e177aebe9ba11c3f077e847e}{Screen\_OpenEndScreen}}(\textcolor{keywordtype}{bool}\ isPlayerBlue,\ uint8\_t\ result);}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_a617cfe0c3084d2041b967728266e7604}{Screen\_DisplayPlayAgainButton}}();}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00120\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_aff2b4502723592d52eab826742bc0066}{Screen\_DisplayHoveringPiece}}(\textcolor{keywordtype}{bool}\ isPlayerBlue);}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00132\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_a91f54471cb33c61a251b2c2290138051}{Screen\_MoveHoveringPieceRight}}(\textcolor{keywordtype}{bool}\ isPlayerBlue);}
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_a9d72f16034b67a0eeb6aa818e94fd0dd}{Screen\_MoveHoveringPieceLeft}}(\textcolor{keywordtype}{bool}\ isPlayerBlue);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00145\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_ada5c331986ca2d887395e6842c9bcae4}{Screen\_DrawPiece}}(uint16\_t\ Xpos,\ uint16\_t\ Ypos,\ \textcolor{keywordtype}{bool}\ isPlayerBlue);}
+\DoxyCodeLine{00146\ }
+\DoxyCodeLine{00160\ uint16\_t\ \mbox{\hyperlink{_screen___driver_8h_a3302f1cc19baf94f0359663e9e3c64d0}{Screen\_RowToCoords}}(uint8\_t\ position);}
+\DoxyCodeLine{00161\ uint16\_t\ \mbox{\hyperlink{_screen___driver_8h_ae0db61fa174e9af3f15af2e294cc7dcc}{Screen\_ColumnToCoords}}(uint8\_t\ position);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00172\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_screen___driver_8h_a4319344e5d4f6a4efe6dc583cf58e0f4}{Screen\_GetisOnePlayer}}();}
+\DoxyCodeLine{00173\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_screen___driver_8h_a2a4482b173226a3ab8b312acf1ef2c37}{Screen\_SetisOnePlayer}}(\textcolor{keywordtype}{bool}\ newVal);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00181\ \mbox{\hyperlink{stmpe811_8h_ac7c879c30ebf68a158c8e720f4d7a1bb}{STMPE811\_TouchData}}*\ \mbox{\hyperlink{_screen___driver_8h_ac0fc3d29f0fc19f79745affd0138e981}{Screen\_GetPTouchData}}();}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00183\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}
