@@ -1,9 +1,14 @@
-/*
- * LCD_Driver.h
- *
- *  Created on: Sep 28, 2023
- *      Author: Xavion
- */
+/**
+  ******************************************************************************
+  * @file    LCD_Driver.h
+  * @author  Xavion
+  * @brief   Header file for LCD_Driver.c.
+  ******************************************************************************
+  * 
+  * This file is used to make visuals on the LCD screen using the STMP811 interface.
+  * 
+  ******************************************************************************
+  */ 
 
 #ifndef INC_LCD_DRIVER_H_
 #define INC_LCD_DRIVER_H_

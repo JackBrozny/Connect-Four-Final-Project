@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ECEN2370_StarterCode_SP25&apos; to &apos;JBroznyFinalProject&apos;" description="Rename resource &apos;ECEN2370_StarterCode_SP25&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ECEN2370_StarterCode_SP25" name="JBroznyFinalProject" stamp="1746121947997" updateReferences="true"/>
+</session>

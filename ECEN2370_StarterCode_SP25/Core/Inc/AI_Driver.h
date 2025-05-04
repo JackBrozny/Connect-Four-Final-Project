@@ -1,9 +1,10 @@
-/*
- * AI_Driver.h
- *
- *  Created on: April 28, 2025
- *      Author: Jack Brozny
- */
+/**
+  ******************************************************************************
+  * @file    AI_Driver.h
+  * @author  Jack Brozny
+  * @brief   Header file for AI_Driver.c.
+  ******************************************************************************
+  */ 
 
 #ifndef INC_AI_DRIVER_H_
 #define INC_AI_DRIVER_H_

@@ -2804,9 +2804,9 @@ void Screen_OpenStartupScreen(){
     HAL_Delay(200);
  800142a:	20c8      	movs	r0, #200	@ 0xc8
  800142c:	f002 f9a4 	bl	8003778 <HAL_Delay>
-    // LCD_Draw_Expanding_Circle(130, 250, LCD_COLOR_GREEN);
-    // LCD_Draw_Expanding_Circle(LCD_X_CENTER, LCD_Y_CENTER, LCD_COLOR_WHITE);
-    // HAL_Delay(1000);
+    LCD_Draw_Expanding_Circle(130, 250, LCD_COLOR_GREEN);
+    LCD_Draw_Expanding_Circle(LCD_X_CENTER, LCD_Y_CENTER, LCD_COLOR_WHITE);
+    HAL_Delay(1000);
 
     //Display title
 	LCD_SetTextColor(LCD_COLOR_BLACK);

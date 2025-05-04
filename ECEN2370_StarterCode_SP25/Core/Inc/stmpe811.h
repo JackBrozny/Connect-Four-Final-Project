@@ -1,9 +1,15 @@
-/*
- * stmpe811.h
- *
- *  Created on: Oct 31, 2023
- *      Author: Tilen MAJERLE modified significantly by Xavion
- */
+/**
+  ******************************************************************************
+  * @file           : stmpe811.h
+  * @brief          : Header for stmpe811.c file.
+  *                   This file contains the common defines of the application.
+  ******************************************************************************
+  *
+  * This file is for the STMP811 peripheral which is used to interface with the
+  * LCD screen.
+  *
+  ******************************************************************************
+  */
 
 #ifndef INC_STMPE811_H_
 #define INC_STMPE811_H_
