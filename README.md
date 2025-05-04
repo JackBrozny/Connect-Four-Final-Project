@@ -2,7 +2,7 @@
 
 A Connect Four game implemented in C for the STM32F429I Discovery Board. This is my final project for my Embedded Software Engineering class, and I applied the skills I learned over the course of the semester like using SPI, interrupts, reading technical documentation, etc.
 
-
+[Code Documentation](https://your-username.github.io/your-repo/Code_Documentation/index.html)
 
 ---
 
