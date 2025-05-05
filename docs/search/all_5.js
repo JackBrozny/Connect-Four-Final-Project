@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['font12x12_0',['Font12x12',['../fonts_8h.html#a4096608ca3604c60a4b31b6e2ebbe7fb',1,'fonts.h']]],
-  ['font16x24_1',['Font16x24',['../fonts_8h.html#acfc9f118b202f5835826f2c71494eb05',1,'fonts.h']]],
-  ['font_5ft_2',['FONT_t',['../struct_f_o_n_t__t.html',1,'']]],
-  ['fonts_2eh_3',['fonts.h',['../fonts_8h.html',1,'']]],
-  ['functions_4',['functions',['../group___end_check.html',1,'End condition functions'],['../group___piece_movement.html',1,'Piece movement functions']]]
+  ['empty_0',['EMPTY',['../Board__Driver_8h.html#ab8717557c6157db9ed19efa9d1c11c2da2f0d18fc0d0fa4a6cd92dc328501874d',1,'Board_Driver.h']]],
+  ['end_20condition_20functions_1',['End condition functions',['../group__EndCheck.html',1,'']]],
+  ['error_5fhandler_2',['error_handler',['../ApplicationCode_8h.html#a1730ffe1e560465665eb47d9264826f9',1,'Error_Handler(void):&#160;ApplicationCode.c'],['../main_8h.html#a1730ffe1e560465665eb47d9264826f9',1,'Error_Handler(void):&#160;ApplicationCode.c']]]
 ];

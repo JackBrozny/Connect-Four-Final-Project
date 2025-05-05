@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../struct_s_t_m_p_e811__t.html#a4dde988b1b2adba65ae3efa69f65d960',1,'STMPE811_t']]]
+  ['y_0',['y',['../structSTMPE811__t.html#af64cf0d9f6dc47511e2f0faf09c01b75',1,'STMPE811_t']]]
 ];

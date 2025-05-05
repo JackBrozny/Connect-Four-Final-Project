@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['last_5fpressed_0',['last_pressed',['../struct_s_t_m_p_e811__t.html#acdbcdc5beb60e8887002fe4cc6239929',1,'STMPE811_t']]]
+  ['pressed_0',['pressed',['../structSTMPE811__t.html#a47cef26fd8a96061793b155ad784fa42',1,'STMPE811_t']]]
 ];

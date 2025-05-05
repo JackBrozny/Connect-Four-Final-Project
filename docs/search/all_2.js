@@ -1,11 +1,21 @@
 var searchData=
 [
-  ['columns_0',['COLUMNS',['../_board___driver_8h.html#a06c6c391fc11d106e9909f0401b255b1',1,'Board_Driver.h']]],
-  ['compile_5ftouch_1',['COMPILE_TOUCH',['../stmpe811_8h.html#a421302b693870f9302b41587ad4ab065',1,'stmpe811.h']]],
-  ['compile_5ftouch_5ffunctions_2',['COMPILE_TOUCH_FUNCTIONS',['../_l_c_d___driver_8h.html#ab92c88fa1bcc76867af3f7c1d30ce99b',1,'LCD_Driver.h']]],
-  ['condition_20functions_3',['End condition functions',['../group___end_check.html',1,'']]],
-  ['constants_4',['constants',['../group___board_coords.html',1,'board array constants'],['../group___screen_coords.html',1,'Screen coordinate constants']]],
-  ['coordinate_20constants_5',['Screen coordinate constants',['../group___screen_coords.html',1,'']]],
-  ['csx_5fgpio_5fport_6',['CSX_GPIO_Port',['../main_8h.html#aea68d78ac26021df352188d0d929a9e1',1,'main.h']]],
-  ['csx_5fpin_7',['CSX_Pin',['../main_8h.html#ad22659ae1cfd5315588e03f78d1e70c1',1,'main.h']]]
+  ['blue_0',['BLUE',['../Board__Driver_8h.html#ab8717557c6157db9ed19efa9d1c11c2da35d6719cb4d7577c031b3d79057a1b79',1,'Board_Driver.h']]],
+  ['board_20array_20constants_1',['board array constants',['../group__BoardCoords.html',1,'']]],
+  ['board_5fcheckendcondition_2',['board_checkendcondition',['../group__EndCheck.html#ga4e9d5507fddef5c8c1485a5f34e0ab88',1,'Board_CheckEndCondition():&#160;Board_Driver.c'],['../group__EndCheck.html#ga4e9d5507fddef5c8c1485a5f34e0ab88',1,'Board_CheckEndCondition():&#160;Board_Driver.c']]],
+  ['board_5fcheckfortie_3',['board_checkfortie',['../group__EndCheck.html#ga115c44b0d8cef7cd31912c979913e43c',1,'Board_CheckForTie():&#160;Board_Driver.c'],['../group__EndCheck.html#ga115c44b0d8cef7cd31912c979913e43c',1,'Board_CheckForTie():&#160;Board_Driver.c']]],
+  ['board_5fcheckforwin_4',['board_checkforwin',['../group__EndCheck.html#ga7d725136712d19a7607842dede3544df',1,'Board_CheckForWin(uint8_t placedRow, uint8_t placedCol):&#160;Board_Driver.c'],['../group__EndCheck.html#ga7d725136712d19a7607842dede3544df',1,'Board_CheckForWin(uint8_t placedRow, uint8_t placedCol):&#160;Board_Driver.c']]],
+  ['board_5fdriver_2eh_5',['Board_Driver.h',['../Board__Driver_8h.html',1,'']]],
+  ['board_5fdroppiece_6',['board_droppiece',['../group__PieceMovement.html#ga4650893391fb028ff77d600b0c627892',1,'Board_DropPiece():&#160;Board_Driver.c'],['../group__PieceMovement.html#ga4650893391fb028ff77d600b0c627892',1,'Board_DropPiece():&#160;Board_Driver.c']]],
+  ['board_5fgetbluewins_7',['Board_GetblueWins',['../Board__Driver_8h.html#abc0cb8b6580abd34b2ec0d737d2d4659',1,'Board_Driver.h']]],
+  ['board_5fgetisplayerblue_8',['Board_GetisPlayerBlue',['../Board__Driver_8h.html#aac239d5d6e0032244c1eda0b5f1691d7',1,'Board_Driver.c']]],
+  ['board_5fgetisstillplaying_9',['Board_GetisStillPlaying',['../Board__Driver_8h.html#a1f5cdbe40a4b1cb1fc082549032eabca',1,'Board_Driver.c']]],
+  ['board_5fgetredwins_10',['Board_GetredWins',['../Board__Driver_8h.html#a928830ff6a8cbcbdac20dbc31f866fe9',1,'Board_Driver.h']]],
+  ['board_5fplayaimove_11',['Board_PlayAIMove',['../Board__Driver_8h.html#a7d81f0158f2399314795a14ad5a4399a',1,'Board_Driver.c']]],
+  ['board_5fplaypolling_12',['Board_PlayPolling',['../Board__Driver_8h.html#a1a48b162d689a518630c69aef1a010f9',1,'Board_Driver.c']]],
+  ['board_5freset_13',['Board_Reset',['../Board__Driver_8h.html#a71b73ecab67f1b32ddea072ea0ae67ad',1,'Board_Driver.c']]],
+  ['board_5fsethoveringpiece_14',['board_sethoveringpiece',['../group__PieceMovement.html#gac055c1fa04b353021f75cde48927c1d9',1,'Board_SetHoveringPiece():&#160;Board_Driver.c'],['../group__PieceMovement.html#gac055c1fa04b353021f75cde48927c1d9',1,'Board_SetHoveringPiece():&#160;Board_Driver.c']]],
+  ['board_5fshifthoveringpieceleft_15',['board_shifthoveringpieceleft',['../group__PieceMovement.html#gae42c8f98e07c0e451b7565d7e585fde3',1,'Board_ShiftHoveringPieceLeft():&#160;Board_Driver.c'],['../group__PieceMovement.html#gae42c8f98e07c0e451b7565d7e585fde3',1,'Board_ShiftHoveringPieceLeft():&#160;Board_Driver.c']]],
+  ['board_5fshifthoveringpieceright_16',['board_shifthoveringpieceright',['../group__PieceMovement.html#ga466eb2709da6e2a1bfb515fc8dde8b83',1,'Board_ShiftHoveringPieceRight():&#160;Board_Driver.c'],['../group__PieceMovement.html#ga466eb2709da6e2a1bfb515fc8dde8b83',1,'Board_ShiftHoveringPieceRight():&#160;Board_Driver.c']]],
+  ['busfault_5fhandler_17',['busfault_handler',['../stm32f4xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f4xx_it.c'],['../stm32f4xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f4xx_it.c']]]
 ];
